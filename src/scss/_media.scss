@@ -1,0 +1,23 @@
+@media(max-width: 875px) {
+    .about-info {
+        grid-template-areas: 
+            'bio-image'
+            'bio' !important;
+        
+        img {
+            justify-self: center;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+@media(max-width: 650px) {
+    .text-fields {
+        grid-template-areas: 
+            'name'
+            'email'
+            'subject'
+            'phone'
+            'message' !important;
+    }
+}
