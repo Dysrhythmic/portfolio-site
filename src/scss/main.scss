@@ -211,6 +211,7 @@ section {
     }
 
     .text-fields {
+        width: 100%;
         display: grid;
         grid-template-areas: 
             'name email'
@@ -244,9 +245,18 @@ section {
         }
     }
 
+    .netlify-recaptcha {
+        margin-top: 1rem;
+
+        div {
+            margin-left: auto;
+        }
+    }
+
     button[type='submit'] {
         width: 50%;
         padding: 0.8rem;
+        margin-top: 1rem;
         cursor: pointer;
     }
 }

@@ -20,4 +20,29 @@
             'phone'
             'message' !important;
     }
+
+    .experience {
+        margin: 2rem 0 !important;
+
+        .msg-box {
+            padding: 1rem 0;
+
+            h4, p {
+                padding-bottom: 1rem;
+            }
+        }
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-height: 500px) {
+    .profile-content {
+        margin-top: 5rem !important;
+        height: 100vh !important;
+    }
 }

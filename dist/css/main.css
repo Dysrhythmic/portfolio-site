@@ -31,7 +31,22 @@
 
 @media (max-width: 650px) {
   .text-fields {
-    grid-template-areas: 'name' 'email' 'subject' 'phone' 'message' !important; } }
+    grid-template-areas: 'name' 'email' 'subject' 'phone' 'message' !important; }
+  .experience {
+    margin: 2rem 0 !important; }
+    .experience .msg-box {
+      padding: 1rem 0; }
+      .experience .msg-box h4, .experience .msg-box p {
+        padding-bottom: 1rem; }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+@media (max-height: 500px) {
+  .profile-content {
+    margin-top: 5rem !important;
+    height: 100vh !important; } }
 
 * {
   margin: 0;
@@ -166,6 +181,7 @@ section {
     font-size: 1.3rem;
     margin-bottom: 1rem; }
   .contact-form .text-fields {
+    width: 100%;
     display: grid;
     grid-template-areas: 'name email' 'subject phone' 'message message';
     gap: 1.2rem; }
@@ -182,9 +198,14 @@ section {
     .contact-form .text-fields .message-input {
       grid-area: message;
       height: 100px; }
+  .contact-form .netlify-recaptcha {
+    margin-top: 1rem; }
+    .contact-form .netlify-recaptcha div {
+      margin-left: auto; }
   .contact-form button[type='submit'] {
     width: 50%;
     padding: 0.8rem;
+    margin-top: 1rem;
     cursor: pointer; }
 
 .footer-content {
