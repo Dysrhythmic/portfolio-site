@@ -15,7 +15,7 @@
   background-color: #151515;
   border-left: 3px solid;
   border-color: #301B3F;
-  padding: 0.5rem; }
+  padding: 2rem; }
   .msg-box p {
     padding-bottom: 0.5rem; }
 
@@ -30,7 +30,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #151515;
   line-height: 1.6;
-  color: #B4A5A5; }
+  color: #B4A5A5;
+  text-align: center; }
 
 a {
   text-decoration: none;
@@ -43,6 +44,9 @@ ul {
 
 h1 {
   font-size: 2rem; }
+
+section {
+  padding: 1rem 0; }
 
 #main-nav {
   display: flex;
@@ -74,71 +78,105 @@ h1 {
     .profile-content .fab:hover {
       color: #151515; }
 
-#profile, #about-me, #experience {
+#profile, #about-me, #experience, #contact {
   background-color: #3C415C; }
 
-.about-content {
-  text-align: center;
-  padding: 1rem 0; }
+.about-me {
+  margin-bottom: 5rem; }
 
 .about-info {
+  margin-top: 5rem;
   display: grid;
-  grid-template-areas: 'bioimage bio bio'; }
+  grid-template-areas: 'bio-image bio bio'; }
   .about-info img {
     width: 250px;
-    margin-right: 2rem; }
+    margin-right: 2rem;
+    grid-area: bio-image; }
+  .about-info .bio {
+    padding-top: 1rem;
+    padding-bottom: 0;
+    grid-area: bio; }
 
-.progress {
-  overflow: hidden;
-  height: 20px;
-  background: #B4A5A5;
-  border-radius: 5px;
-  margin-bottom: 0.6rem; }
-  .progress .progress-bar {
-    height: 100%;
-    color: #B4A5A5;
-    text-align: center;
-    background: #3C415C; }
-    .progress .progress-bar.python {
-      width: 80%; }
-    .progress .progress-bar.rust {
-      width: 70%; }
-    .progress .progress-bar.javascript {
-      width: 65%; }
-    .progress .progress-bar.jquery {
-      width: 60%; }
-    .progress .progress-bar.html {
-      width: 85%; }
-    .progress .progress-bar.css {
-      width: 75%; }
-    .progress .progress-bar.sass {
-      width: 80%; }
-    .progress .progress-bar.bootstrap {
-      width: 75%; }
-    .progress .progress-bar.git {
-      width: 80%; }
-    .progress .progress-bar.linux {
-      width: 70%; }
-    .progress .progress-bar.vscode {
-      width: 85%; }
-    .progress .progress-bar.sql {
-      width: 60%; }
+.skills {
+  margin: 3rem; }
+  .skills .progress {
+    overflow: hidden;
+    height: 20px;
+    background: #B4A5A5;
+    border-radius: 5px;
+    margin-bottom: 0.6rem; }
+    .skills .progress .progress-bar {
+      height: 100%;
+      color: #B4A5A5;
+      text-align: center;
+      background: #3C415C; }
+      .skills .progress .progress-bar.python {
+        width: 80%; }
+      .skills .progress .progress-bar.rust {
+        width: 70%; }
+      .skills .progress .progress-bar.javascript {
+        width: 65%; }
+      .skills .progress .progress-bar.jquery {
+        width: 60%; }
+      .skills .progress .progress-bar.html {
+        width: 90%; }
+      .skills .progress .progress-bar.css {
+        width: 85%; }
+      .skills .progress .progress-bar.sass {
+        width: 80%; }
+      .skills .progress .progress-bar.bootstrap {
+        width: 75%; }
+      .skills .progress .progress-bar.git {
+        width: 80%; }
+      .skills .progress .progress-bar.linux {
+        width: 70%; }
+      .skills .progress .progress-bar.vscode {
+        width: 85%; }
+      .skills .progress .progress-bar.sql {
+        width: 60%; }
+  .skills .skill-expander {
+    margin-top: 2rem; }
+    .skills .skill-expander:hover {
+      cursor: pointer;
+      color: #3C415C; }
 
-.skill-expander:hover {
-  cursor: pointer;
-  color: #3C415C; }
-
-.work-info {
-  display: grid;
-  grid-template-areas: 'employer description description'; }
-  .work-info img {
-    width: 40px; }
-  .work-info .employer {
-    margin-right: 2rem; }
-    .work-info .employer a:hover {
-      color: #151515; }
-  .work-info .description h4 {
+.experience {
+  margin: 5rem; }
+  .experience img {
+    width: 50px; }
+  .experience h4 {
     padding-bottom: 0.5rem; }
+  .experience .employer-info {
+    margin-bottom: 1rem; }
+
+.contact-form {
+  margin: 5rem; }
+  .contact-form p {
+    font-size: 1.3rem;
+    margin-bottom: 1rem; }
+  .contact-form .text-fields {
+    display: grid;
+    grid-template-areas: 'name email' 'subject phone' 'message message';
+    gap: 1.2rem; }
+    .contact-form .text-fields .field {
+      padding: 0.5rem 1rem; }
+    .contact-form .text-fields .name-input {
+      grid-area: name; }
+    .contact-form .text-fields .email-input {
+      grid-area: email; }
+    .contact-form .text-fields .subject-input {
+      grid-area: subject; }
+    .contact-form .text-fields .phone-input {
+      grid-area: phone; }
+    .contact-form .text-fields .message-input {
+      grid-area: message;
+      height: 100px; }
+  .contact-form button[type='submit'] {
+    width: 50%;
+    padding: 0.8rem;
+    cursor: pointer; }
+  .contact-form .netlify-recaptcha {
+    margin: 1rem 0; }
 
 .footer-content {
   text-align: center;
