@@ -1,0 +1,16 @@
+$website-width: 1000px;
+$font: Arial, Helvetica, sans-serif;
+$primary-color: #151515;
+$secondary-color: #301B3F;
+$tertiary-color: #3C415C;
+$light-color: #B4A5A5;
+$dark-color: #333;
+
+@function set-text-color($color) {
+    @if (lightness($color) > 50) {
+        @return $dark-color;
+    }
+    @else {
+        @return $light-color;
+    }
+}

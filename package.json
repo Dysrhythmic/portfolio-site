@@ -1,0 +1,14 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w src/scss/ -o dist/css/ --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

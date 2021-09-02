@@ -1,0 +1,29 @@
+.container {
+    max-width: $website-width;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+.bottom-line {
+    height: 2px;
+    width: 3rem;
+    background: $secondary-color;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+.msg-box {
+    background-color: $primary-color;
+    border-left: 3px solid;
+    border-color: $secondary-color;
+    padding: 0.5rem;
+
+    p {
+        padding-bottom: 0.5rem;
+    }
+}
+
+.hidden {
+    display: none;
+}

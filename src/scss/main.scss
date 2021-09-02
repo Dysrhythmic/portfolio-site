@@ -1,0 +1,196 @@
+@import 'config';
+@import 'utilities';
+@import 'media';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font;
+    background-color: $primary-color;
+    line-height: 1.6;
+    color: set-text-color($primary-color);
+}
+
+a {
+    text-decoration: none;
+    color: $light-color;
+
+    &:hover {
+        color: $tertiary-color;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem 0;
+
+    ul {
+        display: flex;
+
+        li {
+            padding: 0 1rem;
+
+            a {
+                border-bottom: 3px transparent solid;
+                padding-bottom: 0.3rem;
+                transition: border-color 0.5s;
+
+                &.current {
+                    border-color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+.profile-content {
+    margin-top: 10rem;
+    height: 65vh;
+    text-align: center;
+
+    img {
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        padding-bottom: 10px;
+        font-size: 1.2rem;
+    }
+
+    .fab {
+        padding: 0.5rem;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+#profile, #about-me, #experience {
+    background-color: $tertiary-color;
+}
+
+.about-content {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.about-info {
+    display: grid;
+    grid-template-areas: 'bioimage bio bio';
+
+    img {
+        width: 250px;
+        margin-right: 2rem;
+    }
+}
+
+.progress {
+    overflow: hidden;
+    height: 20px;
+    background: $light-color;
+    border-radius: 5px;
+    margin-bottom: 0.6rem;
+
+    .progress-bar {
+        height: 100%;
+        color: set-text-color($primary-color);
+        text-align: center;
+        background: $tertiary-color;
+
+        &.python {
+            width: 80%;
+        }
+
+        &.rust {
+            width: 70%;
+        }
+
+        &.javascript {
+            width: 65%;
+        }
+
+        &.jquery {
+            width: 60%;
+        }
+
+        &.html {
+            width: 85%;
+        }
+
+        &.css {
+            width: 75%;
+        }
+
+        &.sass {
+            width: 80%;
+        }
+
+        &.bootstrap {
+            width: 75%;
+        }
+
+        &.git {
+            width: 80%;
+        }
+
+        &.linux {
+            width: 70%;
+        }
+
+        &.vscode {
+            width: 85%;
+        }
+
+        &.sql {
+            width: 60%;
+        }
+    }
+}
+
+.skill-expander:hover {
+    cursor: pointer;
+    color: $tertiary-color;
+}
+
+.work-info {
+    display: grid;
+    grid-template-areas: 'employer description description';
+
+    img {
+        width: 40px;
+    }
+
+    .employer {
+        margin-right: 2rem;
+
+        a:hover {
+            color: $primary-color;
+        }
+    }
+
+    .description {
+
+        h4 {
+            padding-bottom: 0.5rem;
+        }
+    }
+}
+
+.footer-content {
+    text-align: center;
+    padding: 1rem 0;
+}
