@@ -183,7 +183,7 @@ section {
 
 .contact-content {
   height: 80vh;
-  margin-bottom: 2rem; }
+  margin-bottom: 3rem; }
   .contact-content .contact-form {
     margin: 5rem; }
     .contact-content .contact-form p {
@@ -195,8 +195,8 @@ section {
       grid-template-areas: 'name email' 'subject phone' 'message message'; }
       .contact-content .contact-form .text-fields .field {
         padding: 0.5rem 1rem;
-        margin-bottom: 1.2rem;
-        margin-right: 1.2rem; }
+        margin: 0 1.2rem;
+        margin-bottom: 1.2rem; }
       .contact-content .contact-form .text-fields .name-input {
         grid-area: name; }
       .contact-content .contact-form .text-fields .email-input {
@@ -208,10 +208,8 @@ section {
       .contact-content .contact-form .text-fields .message-input {
         grid-area: message;
         height: 100px; }
-    .contact-content .contact-form .netlify-recaptcha {
-      margin-top: 1rem; }
-      .contact-content .contact-form .netlify-recaptcha div {
-        margin: auto; }
+    .contact-content .contact-form .netlify-recaptcha div {
+      margin: auto; }
     .contact-content .contact-form button[type='submit'] {
       width: 50%;
       padding: 0.8rem;
