@@ -33,7 +33,8 @@
     align-items: center; }
     .about-info img {
       justify-self: center;
-      margin-bottom: 1.5rem; }
+      margin-bottom: 1.5rem;
+      margin-right: 0 !important; }
   .skills {
     display: flex !important;
     flex-direction: column; } }
