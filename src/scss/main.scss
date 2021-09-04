@@ -11,7 +11,7 @@ body {
     font-family: $font;
     background-color: $primary-color;
     line-height: 1.6;
-    color: set-text-color($primary-color);
+    color: $light-color;
     text-align: center;
 }
 
@@ -20,7 +20,7 @@ a {
     color: $light-color;
 
     &:hover {
-        color: $tertiary-color;
+        color: $dark-color;
     }
 }
 
@@ -48,12 +48,12 @@ section {
             padding: 0 1rem;
 
             a {
-                border-bottom: 3px transparent solid;
+                border-bottom: 2px transparent solid;
                 padding-bottom: 0.3rem;
                 transition: border-color 0.5s;
 
                 &.current {
-                    border-color: $secondary-color;
+                    border-color: $tertiary-color;
                 }
             }
         }
@@ -79,13 +79,13 @@ section {
         padding: 0.5rem;
 
         &:hover {
-            color: $primary-color;
+            color: $dark-color;
         }
     }
 }
 
 #profile, #about-me, #experience, #contact {
-    background-color: $tertiary-color;
+    background-color: $secondary-color;
 }
 
 .about-me {
@@ -122,9 +122,9 @@ section {
 
         .progress-bar {
             height: 100%;
-            color: set-text-color($primary-color);
+            color: $light-color;
             text-align: center;
-            background: $tertiary-color;
+            background: $secondary-color;
 
             &.python {
                 width: 80%;

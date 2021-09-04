@@ -1,16 +1,13 @@
 $website-width: 1000px;
 $font: Arial, Helvetica, sans-serif;
 $primary-color: #151515;
-$secondary-color: #301B3F;
-$tertiary-color: #3C415C;
+$secondary-color: #3C415C;
+$tertiary-color: #301B3F;
 $light-color: #B4A5A5;
-$dark-color: #333;
+$dark-color: #476983;
 
-@function set-text-color($color) {
-    @if (lightness($color) > 50) {
-        @return $dark-color;
-    }
-    @else {
-        @return $light-color;
-    }
-}
+// $primary-color-2: #082032;
+// $secondary-color-2: #2C394B;
+// $tertiary-color-2: #FF4C29;
+// $light-color-2: #c5c5c5;
+// $dark-color-2: #476983;
