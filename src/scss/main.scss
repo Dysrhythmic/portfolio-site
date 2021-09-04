@@ -182,10 +182,11 @@ section {
                 'name email'
                 'subject phone'
                 'message message';
-            gap: 1.2rem;
     
             .field {
                 padding: 0.5rem 1rem;
+                margin-bottom: 1.2rem;
+                margin-right: 1.2rem;
             }
     
             .name-input {
