@@ -48,19 +48,27 @@
       padding: 1rem 0; }
       .experience .msg-box h4, .experience .msg-box p {
         padding-bottom: 1rem; }
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center; } }
-
-@media (max-width: 650px) {
   .linux-img {
-    width: 300px !important; } }
+    width: 300px !important; }
+  .contact-content {
+    margin-bottom: 10rem !important; }
+    .contact-content .contact-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
+
+@media (max-width: 435px) {
+  .linux-img {
+    width: 200px !important; }
+  .vscode-img {
+    width: 200px !important; } }
 
 @media (max-height: 500px) {
   .profile-content {
     margin-top: 5rem !important;
-    height: 100vh !important; } }
+    height: 100vh !important; }
+  .contact-content {
+    margin-bottom: 15rem !important; } }
 
 * {
   margin: 0;
@@ -169,38 +177,41 @@ section {
   .experience .employer-info {
     margin-bottom: 1rem; }
 
-.contact-form {
-  margin: 5rem; }
-  .contact-form p {
-    font-size: 1.3rem;
-    margin-bottom: 1rem; }
-  .contact-form .text-fields {
-    width: 100%;
-    display: grid;
-    grid-template-areas: 'name email' 'subject phone' 'message message';
-    gap: 1.2rem; }
-    .contact-form .text-fields .field {
-      padding: 0.5rem 1rem; }
-    .contact-form .text-fields .name-input {
-      grid-area: name; }
-    .contact-form .text-fields .email-input {
-      grid-area: email; }
-    .contact-form .text-fields .subject-input {
-      grid-area: subject; }
-    .contact-form .text-fields .phone-input {
-      grid-area: phone; }
-    .contact-form .text-fields .message-input {
-      grid-area: message;
-      height: 100px; }
-  .contact-form .netlify-recaptcha {
-    margin-top: 1rem; }
-    .contact-form .netlify-recaptcha div {
-      margin: auto; }
-  .contact-form button[type='submit'] {
-    width: 50%;
-    padding: 0.8rem;
-    margin-top: 1rem;
-    cursor: pointer; }
+.contact-content {
+  height: 80vh;
+  margin-bottom: 2rem; }
+  .contact-content .contact-form {
+    margin: 5rem; }
+    .contact-content .contact-form p {
+      font-size: 1.3rem;
+      margin-bottom: 1rem; }
+    .contact-content .contact-form .text-fields {
+      width: 100%;
+      display: grid;
+      grid-template-areas: 'name email' 'subject phone' 'message message';
+      gap: 1.2rem; }
+      .contact-content .contact-form .text-fields .field {
+        padding: 0.5rem 1rem; }
+      .contact-content .contact-form .text-fields .name-input {
+        grid-area: name; }
+      .contact-content .contact-form .text-fields .email-input {
+        grid-area: email; }
+      .contact-content .contact-form .text-fields .subject-input {
+        grid-area: subject; }
+      .contact-content .contact-form .text-fields .phone-input {
+        grid-area: phone; }
+      .contact-content .contact-form .text-fields .message-input {
+        grid-area: message;
+        height: 100px; }
+    .contact-content .contact-form .netlify-recaptcha {
+      margin-top: 1rem; }
+      .contact-content .contact-form .netlify-recaptcha div {
+        margin: auto; }
+    .contact-content .contact-form button[type='submit'] {
+      width: 50%;
+      padding: 0.8rem;
+      margin-top: 1rem;
+      cursor: pointer; }
 
 .footer-content {
   text-align: center;

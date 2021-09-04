@@ -41,17 +41,29 @@
         }
     }
 
-    .contact-form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-
-@media(max-width: 650px) {
     .linux-img {
         width: 300px !important;
+    }
+
+    .contact-content {
+        margin-bottom: 10rem !important;
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+}
+
+@media(max-width: 435px) {
+    .linux-img {
+        width: 200px !important;
+    }
+
+    .vscode-img {
+        width: 200px !important;
     }
 }
 
@@ -59,5 +71,9 @@
     .profile-content {
         margin-top: 5rem !important;
         height: 100vh !important;
+    }
+
+    .contact-content {
+        margin-bottom: 15rem !important;
     }
 }

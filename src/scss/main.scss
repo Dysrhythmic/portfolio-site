@@ -163,64 +163,70 @@ section {
     }
 }
 
-.contact-form {
-    margin: 5rem;
-    
-    p {
-        font-size: 1.3rem;
-        margin-bottom: 1rem;
-    }
+.contact-content {
+    height: 80vh;
+    margin-bottom: 2rem;
 
-    .text-fields {
-        width: 100%;
-        display: grid;
-        grid-template-areas: 
-            'name email'
-            'subject phone'
-            'message message';
-        gap: 1.2rem;
-
-        .field {
-            padding: 0.5rem 1rem;
-        }
-
-        .name-input {
-            grid-area: name;
-        }
+    .contact-form {
+        margin: 5rem;
         
-        .email-input {
-            grid-area: email;
+        p {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
         }
-
-        .subject-input {
-            grid-area: subject;
+    
+        .text-fields {
+            width: 100%;
+            display: grid;
+            grid-template-areas: 
+                'name email'
+                'subject phone'
+                'message message';
+            gap: 1.2rem;
+    
+            .field {
+                padding: 0.5rem 1rem;
+            }
+    
+            .name-input {
+                grid-area: name;
+            }
+            
+            .email-input {
+                grid-area: email;
+            }
+    
+            .subject-input {
+                grid-area: subject;
+            }
+    
+            .phone-input {
+                grid-area: phone;
+            }
+    
+            .message-input {
+                grid-area: message;
+                height: 100px;
+            }
         }
-
-        .phone-input {
-            grid-area: phone;
+    
+        .netlify-recaptcha {
+            margin-top: 1rem;
+    
+            div {
+                margin: auto;
+            }
         }
-
-        .message-input {
-            grid-area: message;
-            height: 100px;
+    
+        button[type='submit'] {
+            width: 50%;
+            padding: 0.8rem;
+            margin-top: 1rem;
+            cursor: pointer;
         }
-    }
-
-    .netlify-recaptcha {
-        margin-top: 1rem;
-
-        div {
-            margin: auto;
-        }
-    }
-
-    button[type='submit'] {
-        width: 50%;
-        padding: 0.8rem;
-        margin-top: 1rem;
-        cursor: pointer;
     }
 }
+
 
 .footer-content {
     text-align: center;
