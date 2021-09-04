@@ -1,16 +1,16 @@
 let skillExpander = document.querySelector(".skill-expander");
 let skillList = document.querySelectorAll(".skill");
 
-function expandSkills() {
-    for (let i = 0; i < skillList.length; i++) {
+function expandSkills(skillsToShow) {
+    for (let i = 0; i < skillsToShow; i++) {
         if (skillList[i].className === "skill hidden") {
             skillList[i].className = "skill";
         }
     }
 }
 
-function collapseSkills() {
-    for (let i = 3; i < skillList.length; i++) {
+function collapseSkills(skillsLeft) {
+    for (let i = skillsLeft; i < skillList.length; i++) {
         if (skillList[i].className === "skill") {
             skillList[i].className = "skill hidden";
         }
@@ -19,10 +19,10 @@ function collapseSkills() {
 
 skillExpander.addEventListener("click", event => {
     if (skillExpander.className === "skill-expander fas fa-2x fa-chevron-down") {
-        expandSkills();
+        expandSkills(skillList.length);
         skillExpander.className = "skill-expander fas fa-2x fa-chevron-up";
     } else {
-        collapseSkills();
+        collapseSkills(6);
         skillExpander.className = "skill-expander fas fa-2x fa-chevron-down";
     }
 });

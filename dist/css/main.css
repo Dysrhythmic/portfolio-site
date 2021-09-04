@@ -22,16 +22,29 @@
 .hidden {
   display: none; }
 
+@media (min-width: 1100px) {
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important; } }
+
+@media (min-width: 900px) {
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
+
 @media (max-width: 875px) {
   .about-info {
-    grid-template-areas: 'bio-image' 'bio' !important; }
+    display: flex !important;
+    flex-direction: column;
+    align-items: center; }
     .about-info img {
       justify-self: center;
       margin-bottom: 1.5rem; } }
 
 @media (max-width: 650px) {
   .text-fields {
-    grid-template-areas: 'name' 'email' 'subject' 'phone' 'message' !important; }
+    display: flex !important;
+    flex-direction: column; }
   .experience {
     margin: 2rem 0 !important; }
     .experience .msg-box {
@@ -125,46 +138,24 @@ section {
 
 .skills {
   margin: 3rem; }
-  .skills .progress {
-    overflow: hidden;
-    height: 20px;
-    background: #B4A5A5;
-    border-radius: 5px;
-    margin-bottom: 0.6rem; }
-    .skills .progress .progress-bar {
-      height: 100%;
-      color: #B4A5A5;
-      text-align: center;
-      background: #3C415C; }
-      .skills .progress .progress-bar.python {
-        width: 80%; }
-      .skills .progress .progress-bar.rust {
-        width: 70%; }
-      .skills .progress .progress-bar.javascript {
-        width: 65%; }
-      .skills .progress .progress-bar.jquery {
-        width: 60%; }
-      .skills .progress .progress-bar.html {
-        width: 90%; }
-      .skills .progress .progress-bar.css {
-        width: 85%; }
-      .skills .progress .progress-bar.sass {
-        width: 80%; }
-      .skills .progress .progress-bar.bootstrap {
-        width: 75%; }
-      .skills .progress .progress-bar.git {
-        width: 80%; }
-      .skills .progress .progress-bar.linux {
-        width: 70%; }
-      .skills .progress .progress-bar.vscode {
-        width: 85%; }
-      .skills .progress .progress-bar.sql {
-        width: 60%; }
-  .skills .skill-expander {
-    margin-top: 2rem; }
-    .skills .skill-expander:hover {
-      cursor: pointer;
-      color: #301B3F; }
+  .skills .skill {
+    padding: 1rem; }
+    .skills .skill img {
+      width: 200px; }
+      .skills .skill img.linux-img {
+        width: 400px;
+        margin-top: 3rem; }
+      .skills .skill img.sass-img {
+        margin-top: 3rem; }
+      .skills .skill img.vscode-img {
+        width: 300px;
+        margin-top: 2rem; }
+
+.skill-expander {
+  margin-top: 2rem; }
+  .skill-expander:hover {
+    cursor: pointer;
+    color: #301B3F; }
 
 .experience {
   margin: 5rem; }
