@@ -49,7 +49,7 @@
       .experience .msg-box h4, .experience .msg-box p {
         padding-bottom: 1rem; }
   .linux-img {
-    width: 300px !important; }
+    width: 200px !important; }
   .contact-content {
     margin-bottom: 10rem !important; }
     .contact-content .contact-form {
@@ -58,10 +58,16 @@
       align-items: center; } }
 
 @media (max-width: 435px) {
-  .linux-img {
-    width: 200px !important; }
   .vscode-img {
     width: 200px !important; } }
+
+@media (max-width: 400px) {
+  #main-nav {
+    justify-content: center !important; }
+    #main-nav ul {
+      align-items: center !important; }
+    #main-nav .logo {
+      display: none; } }
 
 @media (max-height: 500px) {
   .profile-content {
@@ -154,7 +160,7 @@ section {
     .skills .skill img {
       width: 200px; }
       .skills .skill img.linux-img {
-        width: 400px;
+        width: 300px;
         margin-top: 3rem; }
       .skills .skill img.sass-img {
         margin-top: 3rem; }

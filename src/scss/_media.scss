@@ -42,7 +42,7 @@
     }
 
     .linux-img {
-        width: 300px !important;
+        width: 200px !important;
     }
 
     .contact-content {
@@ -58,13 +58,24 @@
 }
 
 @media(max-width: 435px) {
-    .linux-img {
-        width: 200px !important;
-    }
-
     .vscode-img {
         width: 200px !important;
     }
+}
+
+@media(max-width: 400px) {
+    #main-nav {
+
+        justify-content: center !important;
+        ul {
+            align-items: center !important;
+        }
+
+        .logo {
+            display: none;
+        }
+    }
+
 }
 
 @media(max-height: 500px) {
