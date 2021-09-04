@@ -52,6 +52,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            .text-fields {
+                margin-bottom: 1rem;
+            }
         }
     }
 
@@ -65,11 +69,7 @@
 
 @media(max-width: 400px) {
     #main-nav {
-
         justify-content: center !important;
-        ul {
-            align-items: center !important;
-        }
 
         .logo {
             display: none;
