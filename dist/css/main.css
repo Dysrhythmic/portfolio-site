@@ -42,15 +42,12 @@
     flex-direction: column; } }
 
 @media (max-width: 650px) {
-  .text-fields {
-    display: flex !important;
-    flex-direction: column; }
+  .msg-box {
+    padding: 1rem; }
+    .msg-box h4, .msg-box p {
+      padding-bottom: 1rem; }
   .experience {
     margin: 2rem 0 !important; }
-    .experience .msg-box {
-      padding: 1rem 0; }
-      .experience .msg-box h4, .experience .msg-box p {
-        padding-bottom: 1rem; }
   .linux-img {
     width: 200px !important; }
   .contact-content {
@@ -58,7 +55,10 @@
     .contact-content .contact-form {
       display: flex;
       flex-direction: column;
-      align-items: center; } }
+      align-items: center; }
+      .contact-content .contact-form .text-fields {
+        display: flex !important;
+        flex-direction: column; } }
 
 @media (max-width: 435px) {
   .vscode-img {

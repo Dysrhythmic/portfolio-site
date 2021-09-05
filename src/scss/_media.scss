@@ -29,21 +29,16 @@
 }
 
 @media(max-width: 650px) {
-    .text-fields {
-        display: flex !important;
-        flex-direction: column;
+    .msg-box {
+        padding: 1rem;
+
+        h4, p {
+            padding-bottom: 1rem;
+        }
     }
 
     .experience {
         margin: 2rem 0 !important;
-
-        .msg-box {
-            padding: 1rem 0;
-
-            h4, p {
-                padding-bottom: 1rem;
-            }
-        }
     }
 
     .linux-img {
@@ -57,9 +52,13 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            .text-fields {
+                display: flex !important;
+                flex-direction: column;
+            }
         }
     }
-
 }
 
 @media(max-width: 435px) {
