@@ -22,9 +22,10 @@
 .hidden {
   display: none; }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
   .skills {
-    grid-template-columns: repeat(2, 1fr) !important; } }
+    display: flex !important;
+    flex-direction: column; } }
 
 @media (max-width: 875px) {
   .about-info {
@@ -36,10 +37,7 @@
       margin-bottom: 1.5rem;
       margin-right: 0 !important; }
     .about-info .bio {
-      padding-bottom: 2rem !important; }
-  .skills {
-    display: flex !important;
-    flex-direction: column; } }
+      padding-bottom: 2rem !important; } }
 
 @media (max-width: 650px) {
   .msg-box {
@@ -85,12 +83,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #151515;
   line-height: 1.6;
-  color: #B4A5A5;
+  color: #b3b3b3;
   text-align: center; }
 
 a {
   text-decoration: none;
-  color: #B4A5A5; }
+  color: #b3b3b3; }
   a:hover {
     color: #476983; }
 

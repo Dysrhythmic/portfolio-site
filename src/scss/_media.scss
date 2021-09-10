@@ -1,6 +1,7 @@
-@media(max-width: 1100px) {
+@media(max-width: 1000px) {
     .skills {
-        grid-template-columns: repeat(2, 1fr) !important;
+        display: flex !important;
+        flex-direction: column; 
     }
 }
 
@@ -19,12 +20,6 @@
         .bio {
             padding-bottom: 2rem !important;
         }
-    }
-    .skills {
-        display: flex !important;
-        flex-direction: column;
-
-        
     }
 }
 

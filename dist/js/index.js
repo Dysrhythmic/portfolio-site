@@ -22,7 +22,7 @@ skillExpander.addEventListener("click", event => {
         expandSkills(skillList.length);
         skillExpander.className = "skill-expander fas fa-2x fa-chevron-up";
     } else {
-        collapseSkills(6);
+        collapseSkills(3);
         skillExpander.className = "skill-expander fas fa-2x fa-chevron-down";
     }
 });
