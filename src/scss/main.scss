@@ -180,7 +180,6 @@ section {
             display: grid;
             grid-template-areas: 
                 'name email'
-                'subject phone'
                 'message message';
     
             .field {
@@ -195,14 +194,6 @@ section {
             
             .email-input {
                 grid-area: email;
-            }
-    
-            .subject-input {
-                grid-area: subject;
-            }
-    
-            .phone-input {
-                grid-area: phone;
             }
     
             .message-input {
