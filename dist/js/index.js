@@ -1,7 +1,7 @@
-let skillExpander = document.querySelector(".skill-expander");
-let skillList = document.querySelectorAll(".skill");
+const skillExpander = document.querySelector(".skill-expander");
+const skillList = document.querySelectorAll(".skill");
 
-function expandSkills(skillsToShow) {
+const expandSkills = (skillsToShow) => {
     for (let i = 0; i < skillsToShow; i++) {
         if (skillList[i].className === "skill hidden") {
             skillList[i].className = "skill";
@@ -9,7 +9,7 @@ function expandSkills(skillsToShow) {
     }
 }
 
-function collapseSkills(skillsLeft) {
+const collapseSkills = (skillsLeft) => {
     for (let i = skillsLeft; i < skillList.length; i++) {
         if (skillList[i].className === "skill") {
             skillList[i].className = "skill hidden";
