@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Jacob Tucker</title>
+    <link>https://jacobtucker.dev/</link>
+    <description>Recent content in Home on Jacob Tucker</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Sep 2022 19:55:58 -0500</lastBuildDate><atom:link href="https://jacobtucker.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>https://jacobtucker.dev/contact/</link>
+      <pubDate>Sat, 03 Sep 2022 17:58:17 -0500</pubDate>
+      
+      <guid>https://jacobtucker.dev/contact/</guid>
+      <description> Here is how you can reach me.
+Submit </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://jacobtucker.dev/about/</link>
+      <pubDate>Sat, 03 Sep 2022 17:58:04 -0500</pubDate>
+      
+      <guid>https://jacobtucker.dev/about/</guid>
+      <description>Who am I? I am a self-taught programmer with an interest in learning new technologies and solving interesting problems.
+Where am I from? I&#39;m from Mississippi, US.
+What are my hobbies? I enjoy reading fantasy and sci-fi novels, spending time with family, and learning new things.
+Technologies Experience Sewer AI Corporation Condition Assessment &amp; Data Analyst
+2021 - Present
+Responsibilities Apply knowledge of NASSCO PACP, LACP, and MACP standards in condition assessment of CCTV inspection data.</description>
+    </item>
+    
+  </channel>
+</rss>

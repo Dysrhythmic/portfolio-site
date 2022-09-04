@@ -1,0 +1,274 @@
+/*
+  primary-color: #151515;
+  secondary-color: #3C415C;
+  tertiary-color: #301B3F;
+  light-color: #b3b3b3;
+  dark-color: #476983;
+*/
+
+.container {
+    max-width: 1000px;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: #301B3F;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.msg-box {
+  background-color: #151515;
+  border-left: 5px solid;
+  border-color: #301B3F;
+  padding: 2rem;
+}
+
+.msg-box p { padding-bottom: 0.5rem; }
+
+.hidden { display: none; }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #151515;
+  line-height: 1.6;
+  color: #b3b3b3;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #b3b3b3;
+}
+
+a:hover { color: #476983; }
+
+ul { list-style: none; }
+
+h1 { font-size: 2rem; }
+
+section { padding: 1rem 0; }
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.3rem 0;
+}
+
+#nav ul { display: flex; }
+
+#nav ul li { padding: 0 1rem; }
+
+#nav ul li a {
+  border-bottom: 2px transparent solid;
+  padding-bottom: 0.3rem;
+  transition: border-color 0.5s;
+}
+
+#nav ul li a.current { border-color: #301B3F; }
+
+.profile-content {
+  margin-top: 10rem;
+  height: 65vh;
+  text-align: center;
+}
+
+.profile-content img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.profile-content p {
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.profile-content .fab { padding: 0.5rem; }
+
+.profile-content .fab:hover { color: #476983; }
+
+#profile, #about, #experience, #contact { background-color: #3C415C; }
+
+.about-content { margin-bottom: 5rem; }
+
+.about-info {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-areas: 'bio-image bio bio';
+}
+
+.about-info img {
+  width: 250px;
+  margin-right: 2rem;
+  grid-area: bio-image;
+}
+
+.about-info .bio {
+  padding-top: 1rem;
+  padding-bottom: 0;
+  grid-area: bio;
+}
+
+.skills {
+  margin: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skills .skill { padding: 1rem; }
+
+.skills .skill img { width: 200px; }
+
+.skills .skill img.linux-img {
+  width: 300px;
+  margin-top: 3rem;
+}
+
+.skills .skill img.sass-img { margin-top: 3rem; }
+
+.skills .skill img.vscode-img {
+  width: 300px;
+  margin-top: 2rem;
+}
+
+.skill-expander { margin-top: 2rem; }
+
+.skill-expander:hover {
+  cursor: pointer;
+  color: #301B3F;
+}
+
+.experience { margin: 5rem; }
+
+.experience img { width: 50px; }
+
+.experience h4 { padding-bottom: 0.5rem; }
+
+.experience .employer-info { margin-bottom: 1rem; }
+
+.contact-content {
+  height: 80vh;
+  margin-bottom: 3rem;
+}
+
+.contact-content .contact-form { margin: 5rem; }
+
+.contact-content .contact-form p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-content .contact-form .text-fields {
+  width: 100%;
+  display: grid;
+  grid-template-areas: 'name email'
+'subject phone'
+'message message';
+}
+
+.contact-content .contact-form .text-fields .field {
+  padding: 0.5rem 1rem;
+  margin: 0 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.contact-content .contact-form .text-fields .name-input { grid-area: name; }
+
+.contact-content .contact-form .text-fields .email-input { grid-area: email; }
+
+.contact-content .contact-form .text-fields .subject-input { grid-area: subject; }
+
+.contact-content .contact-form .text-fields .phone-input { grid-area: phone; }
+
+.contact-content .contact-form .text-fields .message-input {
+  grid-area: message;
+  height: 100px;
+}
+
+.contact-content .contact-form .netlify-recaptcha div { margin: auto; }
+
+.contact-content .contact-form button[type='submit'] {
+  width: 50%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.footer-content {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+@media (max-width: 1000px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+}
+  
+@media (max-width: 875px) {
+  .about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-info img {
+    justify-self: center;
+    margin-bottom: 1.5rem;
+    margin-right: 0;
+  }
+
+  .about-info .bio { padding-bottom: 2rem; }
+}
+
+@media (max-width: 650px) {
+  .msg-box { padding: 1rem; }
+
+  .msg-box h4, .msg-box p { padding-bottom: 1rem; }
+
+  .experience { margin: 2rem 0; }
+
+  .linux-img { width: 200px }
+
+  .contact-content { margin-bottom: 10rem; }
+
+  .contact-content .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-content .contact-form .text-fields {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 435px) {
+  .vscode-img { width: 200px; }
+}
+
+@media (max-width: 400px) {
+  #nav { justify-content: center; }
+
+  #nav .logo { display: none; }
+}
+
+@media (max-height: 500px) {
+  .profile-content {
+    margin-top: 5rem;
+    height: 100vh;
+  }
+
+  .contact-content { margin-bottom: 15rem; }
+}

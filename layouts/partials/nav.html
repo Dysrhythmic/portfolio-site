@@ -1,0 +1,34 @@
+<div class="container">
+  <nav id="nav">
+    <a href="https://www.jacobtucker.dev" class="logo">Jacob Tucker</a>
+    <ul>
+      <li>
+        <a href="/"
+          {{ if  .IsHome}}
+            class="current"
+          {{ end }}
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="/about"
+          {{ if eq .Title "About"}}
+            class="current"
+          {{ end }}
+        >
+          About
+        </a>
+      </li>
+      <li>
+        <a href="/contact"
+          {{ if eq .Title "Contact"}}
+            class="current"
+          {{ end }}
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
