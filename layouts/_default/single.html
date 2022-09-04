@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <section id="{{ lower .Title }}">
+    <div class="container">
+      <div class="{{ lower .Title }}-content">
+        <h2>{{ .Title }} Me</h2>
+        <div class="bottom-line"></div>
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+{{ end }}
