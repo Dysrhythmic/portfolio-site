@@ -170,9 +170,9 @@ section { padding: 1rem 0; }
 .contact-content .contact-form .text-fields {
   width: 100%;
   display: grid;
-  grid-template-areas: 'name email'
-'subject phone'
-'message message';
+  grid-template-areas:
+  'subject email'
+  'message message';
 }
 
 .contact-content .contact-form .text-fields .field {
@@ -181,20 +181,14 @@ section { padding: 1rem 0; }
   margin-bottom: 1.2rem;
 }
 
-.contact-content .contact-form .text-fields .name-input { grid-area: name; }
-
 .contact-content .contact-form .text-fields .email-input { grid-area: email; }
 
 .contact-content .contact-form .text-fields .subject-input { grid-area: subject; }
-
-.contact-content .contact-form .text-fields .phone-input { grid-area: phone; }
 
 .contact-content .contact-form .text-fields .message-input {
   grid-area: message;
   height: 100px;
 }
-
-.contact-content .contact-form .netlify-recaptcha div { margin: auto; }
 
 .contact-content .contact-form button[type='submit'] {
   width: 50%;
