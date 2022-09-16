@@ -28,6 +28,8 @@
   padding: 2rem;
 }
 
+#experience .msg-box { margin-bottom: 5rem; }
+
 .msg-box p { padding-bottom: 0.5rem; }
 
 .hidden { display: none; }
