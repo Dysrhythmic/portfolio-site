@@ -11,7 +11,8 @@ const validateForm = () => {
     && msgField.value.trim()
     && reEmailValidation.test(emailField.value)
   ) { submitBtn.removeAttribute('disabled'); }
+  
   else { submitBtn.setAttribute('disabled', 'disabled'); }
-}
+};
 
 [subjectField, msgField, emailField].map(field => field.addEventListener('input', validateForm));
