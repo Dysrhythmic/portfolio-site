@@ -1,4 +1,5 @@
 /*
+Color Reference
   primary-color: #151515;
   secondary-color: #3C415C;
   tertiary-color: #301B3F;
@@ -6,6 +7,7 @@
   dark-color: #476983;
 */
 
+/* Utility */
 .container {
     max-width: 1000px;
     padding: 0 1.5rem;
@@ -32,6 +34,7 @@
 
 .hidden { display: none; }
 
+/* Global */
 * {
   margin: 0;
   padding: 0;
@@ -76,6 +79,7 @@ section { padding: 1rem 0; }
 
 #nav ul li a.current { border-color: #301B3F; }
 
+/* Landing Page */
 .profile-content {
   margin-top: 10rem;
   height: 65vh;
@@ -96,6 +100,7 @@ section { padding: 1rem 0; }
 
 .profile-content .fab:hover { color: #476983; }
 
+/* About */
 #profile, #about, #experience, #contact { background-color: #3C415C; }
 
 .about-content { margin-bottom: 5rem; }
@@ -107,7 +112,7 @@ section { padding: 1rem 0; }
 }
 
 .about-info img {
-  width: 250px;
+  width: 284px;
   margin-right: 2rem;
   grid-area: bio-image;
 }
@@ -118,43 +123,28 @@ section { padding: 1rem 0; }
   grid-area: bio;
 }
 
-.skills {
-  margin: 3rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.projects { margin: 5rem; }
+
+.projects .msg-box { 
+  background-color: #3C415C;
+  margin-bottom: 5rem;
 }
 
-.skills .skill { padding: 1rem; }
+.projects .msg-box img { width: 50px; }
 
-.skills .skill img { width: 200px; }
-
-.skills .skill img.linux-img {
-  width: 300px;
-  margin-top: 3rem;
-}
-
-.skills .skill img.sass-img { margin-top: 3rem; }
-
-.skills .skill img.vscode-img {
-  width: 300px;
-  margin-top: 2rem;
-}
-
-.skill-expander { margin-top: 2rem; }
-
-.skill-expander:hover {
-  cursor: pointer;
-  color: #301B3F;
-}
+.projects .msg-box h4 { padding-bottom: 0.5rem; }
 
 .experience { margin: 5rem; }
 
-.experience img { width: 50px; }
+.experience .msg-box { margin-bottom: 5rem; }
 
-.experience h4 { padding-bottom: 0.5rem; }
+.experience .msg-box img { width: 50px; }
 
-.experience .employer-info { margin-bottom: 1rem; }
+.experience .msg-box h4 { padding-bottom: 0.5rem; }
 
+.experience .employer-info, .experience .responsibilities { margin-bottom: 1rem; }
+
+/* Contact */
 .contact-content {
   height: 80vh;
   margin-bottom: 3rem;
@@ -202,13 +192,7 @@ section { padding: 1rem 0; }
   padding: 1rem 0;
 }
 
-@media (max-width: 1000px) {
-  .skills {
-    display: flex;
-    flex-direction: column;
-  }
-}
-  
+/* Responsiveness */  
 @media (max-width: 875px) {
   .about-info {
     display: flex;
@@ -232,8 +216,6 @@ section { padding: 1rem 0; }
 
   .experience { margin: 2rem 0; }
 
-  .linux-img { width: 200px }
-
   .contact-content { margin-bottom: 10rem; }
 
   .contact-content .contact-form {
@@ -246,10 +228,6 @@ section { padding: 1rem 0; }
     display: flex;
     flex-direction: column;
   }
-}
-
-@media (max-width: 435px) {
-  .vscode-img { width: 200px; }
 }
 
 @media (max-width: 400px) {
