@@ -155,7 +155,7 @@ section { padding: 1rem 0; }
 
 .experience h4 { padding-bottom: 0.5rem; }
 
-.experience .employer-info { margin-bottom: 1rem; }
+.experience .employer-info, .experience .responsibilities { margin-bottom: 1rem; }
 
 .contact-content {
   height: 80vh;
