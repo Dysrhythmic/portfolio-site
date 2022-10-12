@@ -123,24 +123,15 @@ section { padding: 1rem 0; }
   grid-area: bio;
 }
 
-.projects { margin: 5rem; }
+.projects, .experience, .education { margin: 5rem; }
 
-.projects .msg-box { 
-  background-color: #3C415C;
-  margin-bottom: 5rem;
-}
+.projects .msg-box, .experience .msg-box, .education .msg-box { margin-bottom: 5rem; }
 
-.projects .msg-box img { width: 50px; }
+.projects .msg-box, .education .msg-box { background-color: #3C415C; }
 
-.projects .msg-box h4 { padding-bottom: 0.5rem; }
+.projects .msg-box img, .experience .msg-box img, .education .msg-box img { width: 50px; }
 
-.experience { margin: 5rem; }
-
-.experience .msg-box { margin-bottom: 5rem; }
-
-.experience .msg-box img { width: 50px; }
-
-.experience .msg-box h4 { padding-bottom: 0.5rem; }
+.projects .msg-box h4, .experience .msg-box h4, .education .msg-box h4 { padding-bottom: 0.5rem; }
 
 .experience .employer-info, .experience .responsibilities { margin-bottom: 1rem; }
 
