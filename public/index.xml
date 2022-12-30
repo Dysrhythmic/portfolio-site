@@ -6,7 +6,11 @@
     <description>Recent content in Home on Jacob Tucker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Sep 2022 19:55:58 -0500</lastBuildDate><atom:link href="https://jacobtucker.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Sep 2022 19:55:58 -0500</lastBuildDate>
+    
+	<atom:link href="https://jacobtucker.dev/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Contact</title>
       <link>https://jacobtucker.dev/contact/</link>
@@ -14,7 +18,7 @@
       
       <guid>https://jacobtucker.dev/contact/</guid>
       <description> Here is how you can reach me.
-Submit </description>
+  Submit  </description>
     </item>
     
     <item>
@@ -24,7 +28,7 @@ Submit </description>
       
       <guid>https://jacobtucker.dev/about/</guid>
       <description>Who I am: I am a programmer with an interest solving interesting problems and learning new things.
-What I do: I used to work in health care while teaching myself programming because I found automating tedious tasks interesting. I decided to go back to university to get more formal training in the field, so I am now a Computer Science student at Southeastern Louisiana University. Projects Remedy A Discord bot made with Nostrum for playing audio from various sources (e.</description>
+What I do:  I used to work in health care while teaching myself programming because I found automating tedious tasks interesting. I decided to go back to university to get more formal training in the field, so I am now a Computer Science student at Southeastern Louisiana University.     Projects   Remedy  A Discord bot made with Nostrum for playing audio from various sources (e.</description>
     </item>
     
   </channel>
