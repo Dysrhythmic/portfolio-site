@@ -205,7 +205,7 @@ section { padding: 1rem 0; }
 
   .msg-box h4, .msg-box p { padding-bottom: 1rem; }
 
-  .experience { margin: 2rem 0; }
+  .projects, .experience, .education { margin: 2rem 0; }
 
   .contact-content { margin-bottom: 10rem; }
 
