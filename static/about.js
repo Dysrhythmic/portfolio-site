@@ -2,7 +2,7 @@ const defaultCoursesToShow = 4;
 const expanders = document.querySelectorAll(".expander");
 
 const expand = (list, numToShow) => {
-  for (let i = 0; i != numToShow; i++) {
+  for (let i = 0; i != numToShow; ++i) {
     if (list[i].classList.contains("hidden")) { list[i].classList.remove("hidden"); }
   }
 };
