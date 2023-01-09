@@ -135,6 +135,13 @@ section { padding: 1rem 0; }
 
 .experience .employer-info, .experience .responsibilities { margin-bottom: 1rem; }
 
+.education .expander { margin-top: 1rem; }
+
+.education .expander:hover {
+  cursor: pointer;
+  color: #301B3F;
+}
+
 /* Contact */
 .contact-content {
   height: 80vh;
