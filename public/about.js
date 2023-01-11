@@ -22,7 +22,7 @@ const expanderController = expander => {
   let school = expander.classList[0];
 
   if (expander.classList.contains("fa-chevron-down")) {
-    expand(courseLists[school], --courseLists[school].length);
+    expand(courseLists[school], courseLists[school].length);
     expander.classList.remove("fa-chevron-down");
     expander.classList.add("fa-chevron-up");
   } else {
