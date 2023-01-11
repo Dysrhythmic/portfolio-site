@@ -8,7 +8,7 @@ const expand = (list, numToShow) => {
 };
 
 const collapse = (list, numToShow) => {
-  for (let i = 0; i != --list.length; ++i) {
+  for (let i = 0; i != list.length; ++i) {
     if (i >= numToShow) { list[i].classList.add("hidden"); } 
   }
 };
