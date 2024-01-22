@@ -123,6 +123,8 @@ section { padding: 1rem 0; }
   grid-area: bio;
 }
 
+.about-info p { padding-bottom: 2rem; }
+
 .projects, .experience, .education { margin: 5rem; }
 
 .projects .msg-box, .experience .msg-box, .education .msg-box { margin-bottom: 5rem; }
