@@ -1,5 +1,10 @@
 const defaultCoursesToShow = 4;
 const expanders = document.querySelectorAll(".expander");
+const courseLists = {
+  lsu: document.querySelectorAll(".lsu-course"),
+  selu: document.querySelectorAll(".selu-course"),
+  icc: document.querySelectorAll(".icc-course")
+};
 
 const expand = (list, numToShow) => {
   for (let i = 0; i != numToShow; ++i) {
@@ -14,11 +19,6 @@ const collapse = (list, numToShow) => {
 };
 
 const expanderController = expander => {
-  const courseLists = {
-    selu: document.querySelectorAll(".selu-course"),
-    icc: document.querySelectorAll(".icc-course")
-  };
-
   let school = expander.classList[0];
 
   if (expander.classList.contains("fa-chevron-down")) {
