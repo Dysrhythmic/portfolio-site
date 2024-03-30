@@ -1,10 +1,10 @@
 /*
 Color Reference
-  primary-color: #7c846d; main background color, alternates with secondary-color as a background or msg-box color for each section
-  secondary-color: #e6e5ca; alternates with primary-color as a background or msg-box color for each section
-  tertiary-color: #41533b; trim line on side of msg boxes, arrow hover color, underline color for nav bar
-  text-color: #2c2f27;
-  liink-color: #476983;
+  primary-color: #7C846D; main background color, alternates with secondary-color as a background or msg-box color for each section
+  secondary-color: #E6E5CA; alternates with primary-color as a background or msg-box color for each section
+  tertiary-color: #41533B; trim line on side of msg boxes, arrow hover color, underline color for nav bar
+  text-color: #2C2F27;
+  link-color: #476983;
 */
 
 /* Utility */
@@ -18,15 +18,15 @@ Color Reference
 .bottom-line {
   height: 2px;
   width: 3rem;
-  background: #41533b;
+  background: #41533B;
   display: block;
   margin: 0 auto 1rem auto;
 }
 
 .msg-box {
-  background-color: #7c846d;
+  background-color: #7C846D;
   border-left: 5px solid;
-  border-color: #41533b;
+  border-color: #41533B;
   padding: 2rem;
 }
 
@@ -42,22 +42,20 @@ Color Reference
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #7c846d;
+  background-color: #7C846D;
   line-height: 1.6;
-  color: #2c2f27;
+  color: #2C2F27;
   text-align: center;
 }
 
 a {
   text-decoration: none;
-  color: #2c2f27;
+  color: #2C2F27;
 }
 
 a:hover { color: #476983; }
 
 ul { list-style: none; }
-
-h1 { font-size: 2rem; }
 
 section { padding: 1rem 0; }
 
@@ -77,7 +75,7 @@ section { padding: 1rem 0; }
   transition: border-color 0.5s;
 }
 
-#nav ul li a.current { border-color: #41533b; }
+#nav ul li a.current { border-color: #41533B; }
 
 /* Landing Page */
 .profile-content {
@@ -101,7 +99,7 @@ section { padding: 1rem 0; }
 .profile-content .fab:hover { color: #476983; }
 
 /* About */
-#profile, #about, #experience, #contact { background-color: #e6e5ca; }
+#profile, #about, #experience, #contact { background-color: #E6E5CA; }
 
 .about-content { margin-bottom: 5rem; }
 
@@ -129,7 +127,7 @@ section { padding: 1rem 0; }
 
 .projects .msg-box, .experience .msg-box, .education .msg-box { margin-bottom: 5rem; }
 
-.projects .msg-box, .education .msg-box { background-color: #e6e5ca; }
+.projects .msg-box, .education .msg-box { background-color: #E6E5CA; }
 
 .projects .msg-box img, .experience .msg-box img, .education .msg-box img { width: 50px; }
 
@@ -141,7 +139,7 @@ section { padding: 1rem 0; }
 
 .education .expander:hover {
   cursor: pointer;
-  color: #41533b;
+  color: #41533B;
 }
 
 /* Contact */
