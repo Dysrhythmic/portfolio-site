@@ -1,10 +1,10 @@
 /*
 Color Reference
-  primary-color: #151515;
-  secondary-color: #3C415C;
-  tertiary-color: #301B3F;
-  light-color: #b3b3b3;
-  dark-color: #476983;
+  primary-color: #7c846d; main background color, alternates with secondary-color as a background or msg-box color for each section
+  secondary-color: #e6e5ca; alternates with primary-color as a background or msg-box color for each section
+  tertiary-color: #41533b; trim line on side of msg boxes, arrow hover color, underline color for nav bar
+  text-color: #2c2f27;
+  liink-color: #476983;
 */
 
 /* Utility */
@@ -18,15 +18,15 @@ Color Reference
 .bottom-line {
   height: 2px;
   width: 3rem;
-  background: #301B3F;
+  background: #41533b;
   display: block;
   margin: 0 auto 1rem auto;
 }
 
 .msg-box {
-  background-color: #151515;
+  background-color: #7c846d;
   border-left: 5px solid;
-  border-color: #301B3F;
+  border-color: #41533b;
   padding: 2rem;
 }
 
@@ -42,15 +42,15 @@ Color Reference
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #151515;
+  background-color: #7c846d;
   line-height: 1.6;
-  color: #b3b3b3;
+  color: #2c2f27;
   text-align: center;
 }
 
 a {
   text-decoration: none;
-  color: #b3b3b3;
+  color: #2c2f27;
 }
 
 a:hover { color: #476983; }
@@ -77,7 +77,7 @@ section { padding: 1rem 0; }
   transition: border-color 0.5s;
 }
 
-#nav ul li a.current { border-color: #301B3F; }
+#nav ul li a.current { border-color: #41533b; }
 
 /* Landing Page */
 .profile-content {
@@ -101,7 +101,7 @@ section { padding: 1rem 0; }
 .profile-content .fab:hover { color: #476983; }
 
 /* About */
-#profile, #about, #experience, #contact { background-color: #3C415C; }
+#profile, #about, #experience, #contact { background-color: #e6e5ca; }
 
 .about-content { margin-bottom: 5rem; }
 
@@ -129,7 +129,7 @@ section { padding: 1rem 0; }
 
 .projects .msg-box, .experience .msg-box, .education .msg-box { margin-bottom: 5rem; }
 
-.projects .msg-box, .education .msg-box { background-color: #3C415C; }
+.projects .msg-box, .education .msg-box { background-color: #e6e5ca; }
 
 .projects .msg-box img, .experience .msg-box img, .education .msg-box img { width: 50px; }
 
@@ -141,7 +141,7 @@ section { padding: 1rem 0; }
 
 .education .expander:hover {
   cursor: pointer;
-  color: #301B3F;
+  color: #41533b;
 }
 
 /* Contact */
