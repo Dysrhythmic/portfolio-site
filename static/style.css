@@ -1,10 +1,10 @@
 /*
 Color Reference
-  primary-color: #151515;
-  secondary-color: #3C415C;
-  tertiary-color: #301B3F;
-  light-color: #b3b3b3;
-  dark-color: #476983;
+  primary-color: #151515; main background color, alternates with secondary-color as a background or msg-box color for each section
+  secondary-color: #3C415C; alternates with primary-color as a background or msg-box color for each section
+  tertiary-color: #301B3F; trim line on side of msg boxes, arrow hover color, underline color for nav bar
+  light-color: #b3b3b3; text color
+  dark-color: #476983; link hover color
 */
 
 /* Utility */
