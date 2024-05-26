@@ -133,7 +133,7 @@ section { padding: 1rem 0; }
 
 .projects .msg-box h4, .experience .msg-box h4, .education .msg-box h4 { padding-bottom: 0.5rem; }
 
-.experience .employer-info, .experience .responsibilities { margin-bottom: 1rem; }
+.experience .employer-info, .experience .description { margin-bottom: 1rem; }
 
 .education .expander { margin-top: 1rem; }
 
